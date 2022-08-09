@@ -11,7 +11,7 @@
 Today I create with html, css and scss file for Admin__panel. I use here html, css and scss tags. 
 ## ## RULES OF USE
 
-> *STEP-1:* `https://github.com/cavidsuleyman/Ballon-Game.git` <br/>
+> *STEP-1:* `https://github.com/IlkinLion/admin__panel.git` <br/>
 > *STEP-2:*  enter the `Admin__panel` folder that appears <br/>
 > *STEP-3:*  open the folder you are in in a text editor <br/>
 > *STEP-4:*  run the  all the`index.html` files in the main folder <br/>
