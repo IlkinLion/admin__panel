@@ -1,0 +1,511 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: Arial, Helvetica, sans-serif;
+   text-decoration: none;
+   list-style: none;
+}
+
+@import 'size';
+@import 'color';
+@import 'tag';
+@import 'mixin';
+@import 'extend';
+
+#{$t1} {
+    @extend #{$t1};
+
+#{$t2} {
+    @extend #{$t2};
+
+    #{$t3} {
+        @extend #{$t3};
+    }
+    #{$t4} {
+        width: $w3;
+        height: $h4;
+        background-color: $c3;
+        @include flex4(column,space-around);
+   
+        #{$t5} {
+            @extend #{$t5};
+        }
+        #{$t6} {
+            @extend #{$t6};
+            
+            &:hover {
+                color: $c4;
+            }
+        }
+        }
+            #{$t7}{
+                @extend #{$t7};
+
+            #{$t6} {
+                @extend #{$t6};
+
+                &:hover {
+                    color: $c4;
+                }
+            }
+        }
+    }
+    #{$t8} {
+        @extend #{$t8};
+
+        #{$t9} {
+            width: 100%;
+            height: $h6;
+            background-color: $c1;
+            @include flex13(row,space-between,center);
+            position: absolute;
+            z-index: 7;
+
+            #{$t10} {
+                @extend #{$t10};
+
+                a {
+                    color: $c6;
+                }
+            }
+            #{$t11} {
+                @extend #{$t11};
+                input {
+                    width: $w7;
+                    height: $h7;
+                    background-color: $c5;
+                    outline: none;
+                    border: none;
+                }
+           
+            #{$t12} {
+                width: $w8;
+                height: $h8;
+                font-size: $s4;
+                color: $c1;
+                background-color: #208FFD;
+                position: absolute;
+                z-index: 10;
+                transform: translate(410px, -34px);
+                border-radius: 5px;
+                cursor: pointer;
+
+                &:hover {
+                    background-color: $c6;
+                }
+            }
+        }
+            #{$t13} {
+                @extend #{$t13};
+                i {
+                    cursor: pointer;
+
+                    &:hover {
+                        color: $c7;
+                    }
+                }
+            img {
+                width: $w8;
+                height: $h8;
+                border-radius: 5px;
+            }
+        }
+        }
+        #{$t24} {
+            @extend #{$t24};
+
+            #{$t25} {
+                width: 240px;
+                height: $h6;
+                background-color: $c1;
+                @include flex7(row,space-around,center);
+                font-size: $s2;
+                white-space: pre;
+                font-weight: $fw1;
+                border-radius: 10px;
+
+                #{$t26} {
+                    @include flex8(column,space-around,center);
+
+                    .number {
+                        font-weight: $fw2;
+                    }
+
+                    .up i {
+                        width: $w10;
+                        height: $h10;
+                        background-color: $c8;
+                        color: $c1;
+                        text-align: center;
+                        border-radius: 50%;
+                    }
+                    .down i {
+                        width: $w10;
+                        height: $h10;
+                        background-color: $c9;
+                        color: $c1;
+                        text-align: center;
+                        border-radius: 50%;
+                    }
+                }
+            .main--center--down img{
+                border-radius: 10px;
+            }
+            }
+        }
+        #{$t14} {
+            width: 100%;
+            height: #{$h13+$h14};
+            background-color: $c5;
+            color: $c6;
+            position: absolute;
+            z-index: 20;
+            top: 220px;
+            @include flex9(row,center,center);
+
+            #{$t15} {
+                width: $w11;
+                height: #{$h13+$h14};
+                background-color: $c1;
+                @include flex10(column,space-between);
+                position: relative;
+                margin-right: 20px;
+                padding-left: 5px;
+                border-radius: 10px;
+
+                #{$t16} {
+                    @include flex7(row,space-around,center);
+
+                #{$t17} {
+                    @extend #{$t17};
+                    
+                    li {
+                        color: $c6;
+                    }
+                }
+                }
+                .button {
+                    bottom: 0;
+                    right: 14%;
+                    position: absolute;
+                    
+                    button {
+                        width: #{$w8+$w10};
+                        height: $h10;
+                        border-radius: 5px;
+                        color: $c1;
+                        background-color: $c2;
+                        cursor: pointer;
+
+                        &:hover {
+                            background-color: $c6;
+                        }
+                    }
+                }
+            }
+        #{$t18} {
+            width: $w13;
+            height: #{$h13+$h14};
+            background-color: $c1;
+            @include flex10(column,space-between);
+            padding-left: 5px;
+            padding-right: 5px;
+            border-radius: 10px;
+
+            #{$t19} {  
+                @include flex10(column,space-between);
+                
+                #{$t20} {
+                    @extend #{$t20};
+
+                        #{$t21} {
+                            @extend #{$t21};
+
+                            #{$t23} {
+                                @extend #{$t23};
+                                img {
+                                    width: $w15;
+                                    height: $h14;
+                                    border-radius: 10px;
+                                    margin-right: 5px;
+                                }
+                            }
+                        }
+                }
+        }
+        }
+        }
+    }
+}
+// @media (max-width: 600px) {
+//     .container {
+//         width: 100%;
+//         height: 1600px;
+//         background-color: #F5F6FA;
+//         display: flex;
+//         flex-direction: column;
+//         justify-content: space-between;
+//         position: relative;
+//     }
+//     nav ul{
+//         transform: translateX(15px);
+//     }
+//     .main--header{
+//         width: 80%;
+//         display: flex;
+//         flex-wrap: wrap;
+//         flex-direction: column;
+//         justify-content: space-around;
+//         position: absolute;
+//         top: 0;
+//     }
+//     nav {
+//         height: 600px;
+//         align-items: center;
+//         justify-content: space-between;
+//         position: fixed;
+//     }
+//     .nav--header {
+//         position: absolute;
+//         z-index: 30;
+//         top: 0;
+//         left: 40px;
+//     }
+//     .main--header--center input {
+//         width: 300px;
+//     }
+//     .main--header--i {
+//         position: absolute;
+//         z-index: 35;
+//         left: -150px;     
+//     }
+//     .nav--bottom {
+//         position: absolute;
+//         z-index: 35;
+//         bottom: 0;
+//         right: -70px;
+//     }
+//     .nav--bar{
+//         position: absolute;
+//         z-index: 15;
+//         bottom:900px;
+//         left: 30px;
+//     }
+//     .main--center {
+//         width: 100%;
+//         height: 400px;
+//         position: absolute;
+//         z-index: 6;
+//         margin: 20px;
+//         display: flex;
+//         flex-direction: column;
+//         justify-content: space-between;
+//         align-items: center;
+//     }
+//     .main--center2{
+//         width: 100%;
+//         height: 500px;
+//         display: flex;
+//         flex-direction: column;
+//         justify-content: space-between;
+//         align-items: center;
+//         position: absolute;
+//         transform: translateY(300px);
+//     }
+//     .main3--left {
+//         position: absolute;
+//         z-index: 5;
+//         left: 20px;
+//         overflow-x: auto;
+//         overflow-y: hidden;
+//     }
+//     .main3--right {
+//         width: 100%;
+//         position: absolute;
+//         z-index: 10;
+//         left: 40px;
+//         bottom: -370px;
+//     }
+//     .main3--right--one {
+//         width: 300px;
+//         background-color: #fff;
+//     }
+//     .main3--left--one--one {
+//         width: 600px;
+//     }
+//     .main--center--center {
+//         margin-bottom: 10px;
+//     }
+//     .button button {
+//         transform: translateX(380px);
+//     }
+//     body::-webkit-scrollbar {
+//         width: 30px;
+//     }
+//     body::-webkit-scrollbar-track {
+//         background-color: #0A2658;
+//     }
+//     body::-webkit-scrollbar-thumb {
+//         background-color: #fff;
+//         border-radius: 30px;
+//     }
+// }
+@media (max-width:700px) {
+    .container {
+        width: 100%;
+        height: 1600px;
+        position: relative;
+        background-color: #F5F6FA;
+    }
+       nav {
+         height: 1600px;
+         align-items: center;
+         justify-content: space-between;
+         position: fixed;
+   }
+   .nav--header {
+        position: absolute;
+         z-index: 30;
+         top: 0;
+         left: 40px;
+     }
+     nav ul{
+        transform: translateX(5px);
+        transform: translateY(-180px);
+     }
+      .nav--bottom {
+         position: absolute;
+         z-index: 35;
+         top: 530px;
+         right: -70px;
+     }
+     .nav--bar{
+         position: absolute;
+         z-index: 15;
+         bottom:900px;
+         left: 30px;
+     }
+    .main2{
+        width: 85%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .main--header {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+        position: absolute;
+        top: 0;
+    }
+    .main--header--left span {
+        display: none;
+    } 
+    .main--header--left i {
+        position: absolute;
+        z-index: 7;
+        left: 10px;
+        font-size: 25px;
+        bottom: 40px;
+    }
+    .main--header--center input {
+        width: 150px;
+        position: absolute;
+        left: -40px;
+    }
+    .main--header--i {
+        position: fixed;
+        z-index: 2;
+        top: 40px;
+        left: -120%;
+    }
+    .main--header--right {
+        position: absolute;
+        z-index: 5;
+        left: 60%;
+    }
+    .main--center {
+        width: 100%;
+        position: absolute;
+        z-index: 30;
+        bottom: 420px;
+        height: 400px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .main--center--center{
+        margin-top: 10px;
+        padding: 30px 140px;
+    }
+    .main--center2{
+        width: 100%;
+        height: 700px;
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        z-index: 12;
+    }
+    // .main3--right--one{
+    //     background-color: #fff;
+    //     position: absolute;
+    //     z-index: 20;
+    //     bottom: -740px;
+    //     left: 70px;
+    // }
+    // .main3--left {
+    //     position: absolute;
+    //     z-index: 25;
+    //     bottom: -350px;
+    //     right: -40px;
+    //     width: 800px;
+    //     overflow-x: auto;
+    //     overflow-y: hidden;
+    //     padding: 50px;
+    // }
+    .main3--left {
+         position: absolute;
+         z-index: 5;
+         left: 20px;
+         bottom: -370px;
+         right: -10px;
+         width: 800px;
+        overflow-x: auto;
+        overflow-y: hidden;
+    }
+    .main3--right {
+         width: 100%;
+         position: absolute;
+         z-index: 10;
+         left: 20px;
+         bottom: -740px;
+     }
+     .main3--right--one {
+         width: 300px;
+         background-color: #fff;
+     }
+     .main3--left--one--one {
+         width: 600px;
+     }
+     .main--center--center {
+         margin-bottom: 10px;
+     }
+     .button button {
+         transform: translateX(380px);
+     }
+     body::-webkit-scrollbar {
+         width: 30px;
+     }
+     body::-webkit-scrollbar-track {
+         background-color: #0A2658;
+     }
+     body::-webkit-scrollbar-thumb {
+         background-color: #fff;
+         border-radius: 30px;
+    }
+}

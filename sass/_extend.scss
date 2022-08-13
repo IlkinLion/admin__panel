@@ -1,0 +1,105 @@
+#{$t1} {
+    width: $w1;
+    height: $h1;
+    @include flex1(column);
+    position: relative;
+}
+#{$t2} {
+    width: #{$w1 - $w5};
+    background-color: $c2;
+    color: $c1;
+    height: $h2;
+    position: absolute;
+    z-index: 5;
+    left: 0;
+    @include flex2(column,space-between,center);
+}
+#{$t3} {
+    width: $w3;
+    height: #{$h7+$h8};
+    font-size: $s1;
+    background-color: $c3;
+    @include flex3(column,center);
+}
+#{$t5} {
+    width: 100%;
+    color: $c1;
+    @include flex5(row,space-between);
+    white-space: pre;
+}
+#{$t6} {
+    font-size: $s2;
+    color: $c1;
+}
+#{$t7} {
+    width: $w4;
+    height: $h5;
+    background-color: $c3;
+    @include flex6(row,space-around);
+}
+#{$t8} {
+    width: $w5;
+    height: $h2;
+    background-color: $c5;
+    position: absolute;
+    z-index: 5;
+    right: 0;
+}
+#{$t10} {
+    width: $w6;
+    height: $h7;
+    font-size: $s3;
+    font-weight: $fw1;
+    color: $c6;
+    background-color: $c3;
+    @include flex7(row,space-around,center);
+}
+#{$t11} {
+    width: $w7;
+    height: $h7;
+    position: relative;
+    border-radius: 5px;
+}
+#{$t13} {
+    width: $w9;
+    height: $h7;
+    background-color: $c5;
+    @include flex7(row,space-around,center);
+    border-radius: 5px;
+}
+#{$t24} {
+    width: 100%;
+    height: $h9;
+    background-color: $c3;
+    position: absolute;
+    @include flex7(row,space-around,center);
+    z-index: 15;
+    top: 100px;
+}
+#{$t17} {
+    width: $w6;
+    height: $h12;
+    background-color: $c3;
+    @include flex11(column,space-around);
+    line-height: $h8;
+    margin: 20px;
+    transform: translateY(-20px);
+}
+#{$t20} {
+    width: 100%;
+    height: $h13;
+    background-color: $c3;
+    @include flex10(column,space-between);
+}
+#{$t21} {
+    width: 100%;
+    height: $h14;
+    background-color: $c3;
+    @include flex13(row,space-between,center);
+}
+#{$t23} {
+    width: #{$w3+$w10+$w12};
+    height: $h14;
+    background: $c3;
+    @include flex12(row,flex-start,center);
+}

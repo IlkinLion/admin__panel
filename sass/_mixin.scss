@@ -1,0 +1,74 @@
+@mixin flex1($d) {
+    display: flex;
+    flex-direction: $d;
+}
+@mixin flex2($d,$j,$a) {
+    display: flex;
+    flex-direction: $d;
+    justify-content: $j;
+    align-items: $a;
+}
+@mixin flex3($d,$j) {
+    display: flex;
+    flex-direction: $d;
+    justify-content: $j;
+}
+@mixin flex4($d,$j) {
+    display: flex;
+    flex-direction: $d;
+    justify-content: $j;
+}
+@mixin flex5($d,$j) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+@mixin flex6($d,$j) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+@mixin flex7($d,$j,$a) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+@mixin flex8($d,$j,$a) {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+@mixin flex9($d,$j,$a) {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+@mixin flex10($d,$j) {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+@mixin flex11($d,$j) {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+@mixin flex12($d,$j,$a) {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+@mixin flex13($d,$j,$a) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+
